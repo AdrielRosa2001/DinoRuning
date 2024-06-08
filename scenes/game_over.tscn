@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://db6jpe20otpq3"]
+
+[ext_resource type="FontFile" uid="uid://e8qqal8clqpk" path="res://assets/fonts/Retro Gaming.ttf" id="1_bprta"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rwd8x"]
+bg_color = Color(0.112349, 0.275903, 0.0565238, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8icky"]
+bg_color = Color(0.207093, 0.440717, 0.212532, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r1en8"]
+bg_color = Color(0.369317, 0.497947, 0, 1)
+
+[node name="GameOver" type="CanvasLayer"]
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -153.0
+offset_top = -34.0
+offset_right = 153.0
+offset_bottom = 34.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("1_bprta")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_rwd8x")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8icky")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_r1en8")
+text = "Recomeçar"
+icon_alignment = 1

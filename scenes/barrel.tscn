@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b00djuveaenk5"]
+
+[ext_resource type="Texture2D" uid="uid://b8f204q5fhj1j" path="res://assets/tileset/3 Objects/Boxes/3.png" id="1_ul8hi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tc2yh"]
+size = Vector2(108, 104)
+
+[node name="barrel" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(4, 4)
+texture = ExtResource("1_ul8hi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_tc2yh")
