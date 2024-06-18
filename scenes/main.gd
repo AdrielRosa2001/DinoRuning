@@ -86,7 +86,7 @@ func _process(delta):
 				remove_obs(obs)
 		
 	else:
-		if Input.is_action_pressed("ui_accept"):
+		if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 			game_runing = true
 			$HUD.get_node("StartLabel").hide()
 			

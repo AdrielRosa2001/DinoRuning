@@ -10,10 +10,10 @@ func _physics_process(delta):
 			$AnimatedSprite2D.play("idle")
 		else:
 			$RunCol.disabled = false
-			if Input.is_action_pressed("ui_accept") and is_on_floor():
+			if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) and is_on_floor():
 				velocity.y = JUMP_VELOCITY
 				$JumpSound.play()
-			elif Input.is_action_pressed("ui_down"):
+			elif Input.is_mouse_button_pressed(MOUSE_BUTTON_RIGHT):
 				$AnimatedSprite2D.play("duck")
 				$RunCol.disabled = true
 			else:
